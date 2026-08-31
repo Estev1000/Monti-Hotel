@@ -80,18 +80,12 @@ body {
     padding-left: 0.5rem;
 }
 
-.logo i {
-    font-size: 2.2rem;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.3));
-}
-
 .logo-img {
     width: auto;
-    height: 60px;
+    height: 50px;
+    max-width: 130px;
+    flex-shrink: 1;
+    align-self: center;
     object-fit: contain;
     filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.3));
 }
@@ -498,6 +492,17 @@ td:last-child {
         --sidebar-width: 80px;
     }
 
+    .sidebar {
+        padding: 2rem 0.5rem;
+        align-items: center;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
     .logo span,
     .logo small,
     .nav-links li button span,
@@ -506,13 +511,20 @@ td:last-child {
     }
 
     .logo-img {
-        width: auto;
-        height: 40px;
+        max-width: 50px;
+        height: auto;
     }
 
     .nav-links li button {
         justify-content: center;
         padding: 12px;
+    }
+
+    .user-badge {
+        padding: 0;
+        background: transparent;
+        border: none;
+        justify-content: center;
     }
 
     .main-content {
